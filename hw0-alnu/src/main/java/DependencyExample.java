@@ -25,7 +25,7 @@ public static void main(String[] args) {
 TokenizerFactory<Word> factory =
 PTBTokenizerFactory.newTokenizerFactory();
 Tokenizer<Word> tokenizer =
-factory.getTokenizer(new StringReader("I'm feeling good!"));
+factory.getTokenizer(new StringReader(args[0]));
 System.out.println(tokenizer.tokenize());
 }
 }
